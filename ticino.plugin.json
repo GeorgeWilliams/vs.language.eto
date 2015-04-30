@@ -1,0 +1,18 @@
+{
+	"pluginId": "vs.language.eto",
+	"activationEvents": ["textModel:eto"],
+	"mainModule": "./etoMain",
+	"contributes": {
+		"language": [{
+			"id": "eto",
+			"extensions": [ ".iks" ],
+			"aliases": [ "Autodesk Inventor Engineer-to-Order", "ETO" ]
+		}]
+	},
+	"scripts": {
+		"compile": "node ../../node_modules/gulp/bin/gulp.js --gulpfile ../gulpfile.js compile --dir vs.language.eto"
+	},
+	"_bundling": [
+		{ "name": "./etoMain" }
+	]
+}
