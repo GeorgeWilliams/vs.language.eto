@@ -333,6 +333,7 @@ define(["require", "exports"], function (require, exports) {
             'osMajorVersion',
             'osMinorVersion',
             'osName',
+            'Parameter',
             'Parameter Rule',
             'Part',
             'partDesign',
